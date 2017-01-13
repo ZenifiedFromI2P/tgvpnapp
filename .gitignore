@@ -1,0 +1,8 @@
+TGVPN-linux-x64
+dist-wp
+__javascript__
+__pycache__
+node_modules
+bundle.js
+app.js
+yarn.lock
