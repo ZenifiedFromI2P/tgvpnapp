@@ -1,0 +1,31 @@
+{
+  "name": "tgvpnapp",
+  "version": "0.0.1",
+  "description": "TGVPN's application for connecting.",
+  "main": "index.html",
+  "dependencies": {
+    "coinkey": "^2.0.0",
+    "coinmsg": "^0.1.3",
+    "electron": "^1.4.14",
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZenifiedFromI2P/tgvpnapp.git"
+  },
+  "keywords": [
+    "tgvpn",
+    "vpn",
+    "app"
+  ],
+  "author": "ZenifiedFromI2P",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ZenifiedFromI2P/tgvpnapp/issues"
+  },
+  "homepage": "https://github.com/ZenifiedFromI2P/tgvpnapp#readme"
+}
