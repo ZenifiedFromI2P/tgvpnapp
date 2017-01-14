@@ -5,4 +5,5 @@ cp app.js dist-wp
 cp index.html dist-wp
 cp bundle.js dist-wp
 cp package.json dist-wp
-electron-packager --overwrite dist-wp TGVPN
+electron-packager dist-wp TGVPN --overwrite --asar
+electron-packager dist-wp TGVPN --overwrite --asar --platform=darwin

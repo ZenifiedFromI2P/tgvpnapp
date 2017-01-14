@@ -10,14 +10,13 @@ _t1 = """
 </form>
 <hr>
 """.strip()
+
 _t2 = """
------BEGIN BITCOIN SIGNED MESSAGE-----
-{msg}
------BEGIN SIGNATURE-----
-{addr}
-{sig}
------END BITCOIN SIGNED MESSAGE-----
+Original message: {msg}
+Username: {addr}
+Password: {sig}
 """.strip()
+
 class View(object):
     def spost(self, ev):
         # Ignore event, let it be garbage-collected.

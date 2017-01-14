@@ -2,7 +2,7 @@
   "name": "tgvpnapp",
   "version": "0.0.1",
   "description": "TGVPN's application for connecting.",
-  "main": "index.html",
+  "main": "main.js",
   "dependencies": {
     "coinkey": "^2.0.0",
     "coinmsg": "^0.1.3",
