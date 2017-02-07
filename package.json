@@ -9,7 +9,9 @@
     "electron": "^1.4.14",
     "jquery": "^3.1.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "electron-packager": "^8.5.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

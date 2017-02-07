@@ -8,10 +8,13 @@ _t1 = """
 </div>
 <button type="submit" class="btn btn-lg btn-primary">Submit</button>
 </form>
+<button id="shouldgenrand" type="button" class="btn btn-lg btn-primary">Generate a random one?</button>
 <div id="errslot"></div>
 """.strip()
 
+
 class Login():
+
     def post(self):
         ba = jQuery("#f1-bitaddr").val()
         if not ba.strip():
@@ -21,11 +24,21 @@ class Login():
             db['ck'] = coinkey(db['pk'])
         except:
             window.alert("Faced exception, check console")
-            window.alert(__except0__.message) # The exception, we must consume it immediately!
+            # The exception, we must consume it immediately!
+            window.alert(__except0__.message)
             console.log(__except0__.message)
             return False
         dashboard.View().do({})
-        return False # Failed callback, don't worry, we consumed it, no other stuff
+        return False  # Failed callback, don't worry, we consumed it, no other stuff
+
+    def head(self):
+        cko = coinkey.createRandom()
+        db['pk'] = cko.publicKey
+        db['ck'] = cko
+        dashboard.View().do({})
+        return False
+
     def do(self, params):
         jQuery(SLOT).html(_t1)
         jQuery("#login").submit(self.post)
+        jQuery("#shouldgenrand").click(self.head)
