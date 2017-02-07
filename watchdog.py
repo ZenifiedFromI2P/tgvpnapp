@@ -3,7 +3,7 @@ from livereload import Server, shell
 server = Server()
 
 # output stdout into a file
-shcmd = shell('transcrypt main.py',)
+shcmd = shell('transcrypt -e 6 -n main.py',)
 server.watch('views/*.py', shcmd)
 server.watch('*.py', shcmd)
 
